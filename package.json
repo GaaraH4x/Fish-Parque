@@ -1,0 +1,17 @@
+{
+  "name": "fish-parque",
+  "version": "1.0.0",
+  "description": "Fish Parque ordering system",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "keywords": [
+    "fish",
+    "ordering"
+  ],
+  "author": "Fish Parque",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  }
+}

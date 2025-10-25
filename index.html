@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Parque - Order Fish Feed, Materials & Catfish</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🐟 Fish Parque</h1>
+            <p class="tagline">Quality Fish Feed, Materials & Fresh Catfish</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="order-section">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Delivery Address *</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Select Product *</label>
+                    <select id="product" name="product" required>
+                        <option value="">-- Choose a product --</option>
+                        <option value="fish_feed">Fish Feed (Min: 10kg)</option>
+                        <option value="catfish">Catfish (Min: 1kg)</option>
+                        <option value="materials">Materials (Min: 50kg)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity (kg) *</label>
+                    <input type="number" id="quantity" name="quantity" min="1" step="0.1" required>
+                    <small id="quantityHelp" class="help-text"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes (Optional)</label>
+                    <textarea id="notes" name="notes" rows="3" placeholder="Any special instructions or delivery preferences..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Place Order</button>
+            </form>
+
+            <div id="message" class="message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fish Parque. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
